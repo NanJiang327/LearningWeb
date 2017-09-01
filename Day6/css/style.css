@@ -4,6 +4,7 @@
 }
 body{
     font:14px/23px "微软雅黑";
+    /*position: relative;*/
 }
 .wp{
     width: 960px;margin: 0 auto;
@@ -20,6 +21,12 @@ body{
 
 img{
     border: none;
+}
+
+.float{
+    position: fixed;
+    right: 100px;
+    bottom:50%;
 }
 
 .top{
@@ -238,4 +245,64 @@ img{
     list-style: none;
     float: left;
     margin: 3px;
+    height: 96px;
+    width: 151px;
+    overflow: hidden;
+    position: relative;
+}
+.product_c span{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 12px;
+    height: 50px;
+    width: 131px;
+    padding: 0 10px;
+    background: yellowgreen;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product_c li a:hover span{
+    display: block;
+}
+.product li img{
+    float: left;
+}
+
+/*footer*/
+.footer{
+    height: 103px;
+    width: 100%;
+    background: url("../img/footer_bg.jpg") repeat-x;
+}
+
+.footer_top{
+    height: 80px;
+    line-height: 80px;
+    color: white;
+}
+
+.footer_top z{
+    font-size: 16px;
+}
+
+.footer_top a{
+    color: white;
+    text-decoration: none;
+}
+.footer_bottom p{
+    color: orange;
+}
+
+.footer_bottom a{
+    color: grey;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+
+.footer_bottom a:hover{
+    color: #ff6600;
 }
