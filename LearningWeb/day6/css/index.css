@@ -14,7 +14,7 @@ body{
 
 /*title background*/
 .title_bg{
-    background: url("../images/title_bg.jpg");
+    background: url("../../images/title_bg.jpg");
     height: 45px;
     line-height: 45px;
     padding-left: 10px;
@@ -194,7 +194,7 @@ p#slide-nav a.on {
     background-position : 0 -24px;
 }
 p#slide-nav a {
-    background-image : url(../images/silde-nav.png);
+    background-image : url(../../images/silde-nav.png);
 }
 
 /*News*/

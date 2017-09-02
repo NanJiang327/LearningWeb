@@ -72,17 +72,17 @@ img{
 
 .s_z{
     width: 6px;
-    background: url("../images/s_z.jpg") no-repeat;
+    background: url("../../images/s_z.jpg") no-repeat;
 }
 
 .s_c{
     width: 200px;
-    background: url("../images/s_c.jpg") repeat-x;
+    background: url("../../images/s_c.jpg") repeat-x;
 }
 
 .s_y{
     width: 78px;
-    background: url("../images/s_r.jpg") no-repeat;
+    background: url("../../images/s_r.jpg") no-repeat;
 }
 
 .s_c input{
@@ -117,7 +117,7 @@ img{
 .nav{
     height: 39px;
     width: 100%;
-    background: url("../images/nav_bg.jpg") repeat-x;
+    background: url("../../images/nav_bg.jpg") repeat-x;
 
 }
 
@@ -130,7 +130,7 @@ img{
 }
 
 .nav li.a,.nav li:hover{
-    background: url("../images/nav_hover.jpg") repeat-x;
+    background: url("../../images/nav_hover.jpg") repeat-x;
 }
 
 .nav a{
@@ -196,7 +196,7 @@ img{
     line-height: 24px;
     padding-left: 15px;
     margin-bottom: 6px;
-    background: url("../images/list_bg.jpg") no-repeat center left;
+    background: url("../../images/list_bg.jpg") no-repeat center left;
 }
 
 .news_c h3:hover{
@@ -276,7 +276,7 @@ img{
 .footer{
     height: 103px;
     width: 100%;
-    background: url("../images/footer_bg.jpg") repeat-x;
+    background: url("../../images/footer_bg.jpg") repeat-x;
 }
 
 .footer_top{
