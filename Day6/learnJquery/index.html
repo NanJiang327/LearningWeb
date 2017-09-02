@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using jQuery</title>
+    <link rel="stylesheet" href="../js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        img {width: 100%; }
+          .container .list-group li {padding-bottom: 15px; text-align:center;padding-top: 15px;margin-left: -1px;overflow:hidden; }
+          .btn {margin-bottom: 20px;}
+          .list-group li{list-style:none;  margin: 0}
+           h5{font-weight:100;font-size:20px;color:#ccc}
+           h1{font-weight:200; color:#525252}
+           .page-header{text-align:center;margin-bottom: 20px;margin-top:28px}
+           .avatar{width: 35px; margin-right: 10px;display:inline-block;}
+           h6{display:inline-block;padding-top: 10px;}
+           .border{border: 1px solid #ccc; border-bottom: none;}
+           .row{padding:0 30px}
+           .jumbotron{height:600px}
+    </style>
+</head>
+
+<body>
+    <header id="header" class="page-header">
+        <div class="container">
+            <h1>Animation</h1>
+            <h5>effect<h5>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="btn-group">
+                <button class="on btn btn-default">Display</button>
+                <button class="off btn btn-default">Hide</button>
+                <button class="toggle btn btn-default">Swap</button>
+            </div>
+            <ul class="list-group row">
+                <li class="col-xs-6 album">
+                    <img src="../images/atlas.jpg" alt="atlas">
+                    <h6>Atlas</h6>
+                </li>
+                <li class="col-xs-6 album">
+                    <img src="../images/christmas_lights.jpg" alt="christmas_lights">
+                    <h6>Christmas Lights</h6>
+                </li>
+
+                <li class="col-xs-6 album">
+                    <img src="../images/mylo_xyloto.jpg" alt="mylo_xyloto">
+                    <h6>Mylo Xyloto</h6>
+                </li>
+
+                <li class="col-xs-6 album">
+                    <img src="../images/paradise.jpg" alt="paradise">
+                    <h6>Paradise</h6>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+
+
