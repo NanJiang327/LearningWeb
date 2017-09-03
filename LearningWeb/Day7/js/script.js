@@ -1,22 +1,22 @@
 $(function () {
-    
-    $('.on').click(function () {
-        //$('.album').fadeIn('fast').fadeOut('fast').fadeIn('slow');
-        $('.album:first').show('fast', function () {
-            $(this).next().show('fast', arguments.callee);
-        });
+    $('.prev-slide').on('click',function () {
+        $('#slideshow').carousel('prev');
     });
-    
-    $('.off').click(function () {
-        /*$('.album').fadeOut(1000, function () {
 
-        });*/
-        $('.album:last').hide('fast', function () {
-            $(this).prev().hide('fast', arguments.callee);
-        });
-    });    
-    
-    $('.toggle').click(function () {
-        $('.album').toggle();
-    });       
-})
+
+    $('.next-slide').on('click',function () {
+        $('#slideshow').carousel('next');
+    });
+
+    $(document).on('keydown',function (e) {
+        switch (e.which){
+            case 37:
+                $('#slideshow').carousel('prev');
+                break;
+            case 39:
+                $('#slideshow').carousel('next');
+                break;
+        }
+    });
+
+});

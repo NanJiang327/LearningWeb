@@ -1,0 +1,185 @@
+/*
+* Header
+*/
+body{
+    padding-top: 50px;
+}
+
+.navbar input[type="text"]{
+    background: whitesmoke;
+    border: none;
+    color: #999999;
+}
+
+.navbar .navbar-form{
+    position: relative;
+}
+
+.navbar button[type="submit"]{
+    position: absolute;
+    top:30%;
+    right: 20px;
+    background: none;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .navbar button[type="submit"]{
+        top:20%;
+    }
+}
+
+
+.navbar .glyphicon{
+    color: #999;
+}
+
+.profile{
+    margin-right: 25px;
+}
+
+.img{
+    width: 100%;
+
+}
+
+.authorImg {
+    width: 60px; height: 60px;
+}
+
+/*
+* Main content
+*/
+
+.content-box{
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.content-box h1{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.content-box h1{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 0;
+}
+
+.content-meta span,
+.content-meta time{
+    margin-right: 10px;
+    color: #828282;
+}
+
+
+#main-content{
+    margin: 20px 0;
+}
+
+.media-box img{
+
+    height: 260px;
+    width: 540px;
+
+}
+
+.media-box{
+    height: 260px;
+    overflow: hidden;
+}
+
+.breadcrumb{
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.icon-bow{
+    display: block;
+    width: 32px;
+    height: 21px;
+    background: #fff url(../images/bow.png) no-repeat 50% 50%;
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 0 10px;
+}
+
+#bottom{
+    background: #009571 url(../images/emerald.png);
+    color: #fff;
+    text-shadow: 1px 1px 1px #048465;
+}
+
+.semicircle{
+    background: url(../images/semicircle.png) repeat-x;
+    padding: 20px 0;
+}
+
+#bottom h3{
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #03a67f;
+    background: url(../images/dashed-h.png) repeat-x 0 center;
+}
+
+#bottom h3 span{
+    background: url(../images/emerald.png);
+    padding-right: 10px;
+}
+
+.dashed-v{
+    background: url(../images/dashed-v.png) repeat-y 100% 0;
+    padding: 0 20px 20px 0;
+}
+
+
+/*end of main content*/
+
+/*Footer*/
+
+#footer{
+    background: url(../images/emerald-footer.png) repeat-x;
+    padding: 30px 0 20px 0;
+    color: #064536;
+    text-shadow: 1px 1px 1px #009571;
+}
+
+/*end of footer*/
+
+/*article*/
+.article-title{
+    margin-bottom: 30px;
+}
+
+
+#content img{
+    margin-bottom: 5px;
+}
+
+#details{
+    margin-bottom: 20px;
+}
+
+#comments h2{
+    font-size: 18px;
+}
+
+#comments .media{
+    margin-bottom: 20px;
+}
+
+.media-box2 img{
+
+    height: 313px;
+    width: 624px;
+
+}
+
+.media-box2{
+    height: 313px;
+    overflow: hidden;
+}
