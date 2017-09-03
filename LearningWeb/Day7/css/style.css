@@ -1,5 +1,5 @@
 body{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .navbar-inverse input[type="text"]{
@@ -32,4 +32,9 @@ body{
 
 .profile{
     margin-right: 25px;
+}
+
+.img{
+    width: 100%;
+
 }
