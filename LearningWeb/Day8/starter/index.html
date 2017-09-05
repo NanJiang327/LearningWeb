@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Backbone</title>
+    <link rel="stylesheet" href="../todo/lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="page-header">Collection View
+        <div id="note_list"></div>
+        <script type="text/template" id="list-template">
+            <span><%= title %></span><small class="pull-right"><%= created_at %></small>
+        </script>
+    </h1>
+</div>
+
+
+
+    <script src="../todo/lib/js/jquery.js"></script>
+    <script src="../todo/lib/js/underscore.min.js"></script>
+    <script src="../todo/lib/js/backbone.min.js"></script>
+    <script src="../todo/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
