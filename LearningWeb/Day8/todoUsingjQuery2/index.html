@@ -1,0 +1,41 @@
+<!dOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <!--Container begin-->
+    <div class="container">
+        <h1>Todo</h1>
+
+        <!--Add task begin-->
+        <form class="add-task">
+            <input type="text" name="content" placeholder="e.g don't forget push your code" autofocus autocomplete="false">
+            <button type="submit">Submit</button>
+        </form>
+        <!--Add task end-->
+
+        <!--Task lis begin-->
+        <div class="task-list"></div>
+        <!--Task list end-->
+
+        <div class="task-detail-mask">
+        <!--Task detail begin-->
+        <div class="task-detail">
+        </div><!--Task detail end-->
+
+
+        </div>
+
+    </div>
+    <!--Container end-->
+    <script src="node_modules/store/store.js"></script>
+    <script src="node_modules/jquery-3.2.1.min.js"></script>
+    <script src="node_modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
+
+</body>
+</html>
