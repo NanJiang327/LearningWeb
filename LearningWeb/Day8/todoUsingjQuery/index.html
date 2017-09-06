@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+</head>
+
+<body>
+<div class="task-list" id="pending">
+    <h3>To do</h3>
+</div>
+
+<div class="task-list" id="inProgress">
+    <h3>In progress</h3>
+</div>
+
+<div class="task-list" id="completed">
+    <h3>Donne</h3>
+</div>
+
+<div class="task-list">
+    <h3>Add todo</h3>
+    <form id="todo-form">
+        <input type="text" class="addTitle" placeholder="Title" />
+        <textarea placeholder="Description" class="addDescriptions"></textarea>
+        <input type="text" placeholder="Due date (d/m/u)" id="datepicker" class="addDate"/>
+        <input type="button" class="btn btn-primary" value="Add todo" id="addItem"/>
+    </form>
+
+    <input type="button" class="btn btn-primary" value="Clean all to do" />
+
+    <div id="delete-div" class="hidden">Drag here to delete todo</div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        new MyTodoList();
+    });
+</script>
+</body>
+</html>

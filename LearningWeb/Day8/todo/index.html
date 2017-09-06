@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/todos.css">
+</head>
+<body>
+
+<div id="todoapp">
+    <header id="header">
+        <h1>Todos</h1>
+        <input type="text" id="new-todo" placeholder="Add Todo" autofocus>
+    </header>
+
+    <section id="main">
+        <input type="checkbox" name="toggle-all" id="toggle-all">
+        <label for="toggle-all">Tag all done</label>
+        <ul id="todo-list">
+
+        </ul>
+    </section>
+    <footer id="footer">
+
+    </footer>
+</div>
+
+<div id="info">
+    <p>Tip: Double click to edit todo</p>
+</div>
+
+<script type="text/template" id="item-template">
+    <div class="view">
+        <input type="checkbox" class="toggle"  <%= completed ? 'checked': '' %>>
+        <label><%= title %></label>
+    </div>
+</script>
+
+<script src="lib/js/jquery.js"></script>
+<script src="lib/js/underscore.min.js"></script>
+<script src="lib/js/backbone.min.js"></script>
+<script src="lib/js/backbone.localStorage.js"></script>
+
+<script src="js/models/Todo.js"></script>
+<script src="js/colloections/TodoCollection.js"></script>
+<script src="js/Routers/Router.js"></script>
+<script src="js/Views/AppView.js"></script>
+<script src="js/Views/TodoView.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
