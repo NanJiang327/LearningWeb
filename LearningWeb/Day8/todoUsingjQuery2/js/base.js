@@ -11,6 +11,7 @@
         ,$update_form
         ,$task_detail_content
         ,$task_detail_content_input
+        ,$check_box_complete
         ;
 
     init();
@@ -42,10 +43,16 @@
     }
 
     function listen_task_detail() {
+        var index;
+        $('.task-item').on('dblclick',function () {
+            index = $(this).data('index');
+            show_task_detail(index);
+        })
+
         $task_details.on('click',function () {
             var $this = $(this);
             var $item = $this.parent().parent();
-            var index = $item.data('index');
+            index = $item.data('index');
             show_task_detail(index);
         })
     }
@@ -60,7 +67,7 @@
     function update_task(index, data) {
         if ( !task_list[index]) return;
 
-        task_list[index] = data;
+        task_list[index] = $.extend({},task_list[index],data);
 
         refresh_task_list();
 
@@ -114,11 +121,31 @@
                 data.content = $(this).find('[name=content]').val();
                 data.description = $(this).find('[name=description]').val();
                 data.remind_date = $(this).find('[name=remind_date]').val();
-                console.log(data);
                 update_task(index, data);
                 hide_task_detail();
         });
 
+
+    }
+
+    function get(index) {
+        return store.get('task_list')[index];
+    }
+
+    //Listen if todo finished
+    function listen_checkbox_complete() {
+        $check_box_complete.on('click',function () {
+            var $this  = $(this);
+            var parent = $this.parent().parent();
+            var index  = parent.data('index');
+
+            var item = get(index);
+            if (item.complete){
+                update_task(index, {complete:false});
+            }else{
+                update_task(index, {complete:true});
+            }
+        })
 
     }
 
@@ -132,8 +159,7 @@
       task_list.push(new_task);
       refresh_task_list();
       return true;
-
-    };
+    }
 
     function delete_task(index) {
         if (index === undefined || !task_list[index]) return;
@@ -143,13 +169,11 @@
 
     function refresh_task_list(){
         store.set('task_list', task_list);
-        console.log('Refreshed')
         render_task_list();
     }
 
     function init(){
         task_list = store.get('task_list') || [];
-        console.log('TASK_LIST :',task_list);
         if(task_list.length){
             render_task_list();
         }
@@ -158,14 +182,32 @@
     function render_task_list() {
         var $task_list = $('.task-list');
         $task_list.html('');
+        var complete_items = [];
         for (var i = 0; i < task_list.length; i++){
-            var $task = render_task_tpl(task_list[i], i);
+            var item = task_list[i];
+            if(item && item.complete){
+                complete_items[i] = item;
+            }else
+                var $task = render_task_tpl(task_list[i], i);
             $task_list.prepend($task);
         }
+
+        for (var j = 0; j <complete_items.length;j++){
+            $task = render_task_tpl(complete_items[j], j);
+            if(complete_items[j] === undefined){
+
+            }else{
+                $task.addClass('completed');
+                $task_list.append($task);
+            }
+        }
+
         $delete_task = $('.action.delete');
         $task_details = $('.action.details');
+        $check_box_complete = $('.task-list .complete[type=checkbox]');
         listen_task_delete();
         listen_task_detail();
+        listen_checkbox_complete();
     };
 
     function render_task_tpl(data, index) {
@@ -173,7 +215,7 @@
 
         var list_item_tpl  =
             '<div class="task-item" data-index="'+index+'">'+
-            '<span><input type="checkbox"></span>'+
+            '<span><input class="complete" '+(data.complete ? 'checked':'')+' type="checkbox"></span>'+
             '<span class="task-content">'+data.content+'</span>'+
             '<span class="fr">'+
             '<span class="action delete"> delete</span>' +
