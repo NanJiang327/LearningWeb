@@ -12,11 +12,22 @@
         ,$task_detail_content
         ,$task_detail_content_input
         ,$check_box_complete
+        ,$msg = $('.message')
+        ,$msg_content = $msg.find('.msg-content')
+        ,$msg_confirm = $msg.find('button')
+        ,$alert = $('.alert')
         ;
 
     init();
 
     $task_detail_mask.on('click',hide_task_detail);
+
+    function  listen_msg_event() {
+        $msg_confirm.on('click',function () {
+            hide_msg();
+        })
+
+    }
 
     $form_add_task.on('submit',function (e) {
         var new_task = {}, $input;
@@ -98,14 +109,17 @@
             '<textarea name="description" id="">'+item.description+'</textarea>' +
             '</div>' +
             '</div>' +
-            '<div class="remind">' +
-            '<input name="remind_date" type="date" value="'+item.remind_date+'">' +
+            '<div class="remind input-item">' +
+            '<label>Remind time</label>'+
+            '<input class="datetime" name="remind_date" type="text" value="'+(item.remind_date||'')+'">' +
             '</div>'+
             '<div><button type="submit">Update</button></div>'+
             '</form>';
 
             $task_detail.html(null);
             $task_detail.html(task_detail);
+            $('.datetime').datetimepicker();
+
             $update_form = $task_detail.find('form');
             $task_detail_content = $update_form.find('.content');
             $task_detail_content_input = $update_form.find('[name=content]');
@@ -176,8 +190,46 @@
         task_list = store.get('task_list') || [];
         if(task_list.length){
             render_task_list();
+            task_remind_check();
+            listen_msg_event();
+            show_msg('hello');
         }
-    };
+    }
+
+    function  task_remind_check() {
+        var current_timestamp;
+        console.log(task_list);
+        var itl = setInterval(function () {
+            for (var i = 0; i<task_list.length;i++){
+                var item  = get(i), task_timestamp;
+                //console.log('log', item);
+                if(!item.remind_date || item.informed ||!item){
+                    continue;
+                } else {
+                    current_timestamp = (new Date()).getTime();
+                    task_timestamp = (new Date(item.remind_date)).getTime();
+                    if(current_timestamp - task_timestamp >= 1){
+                        update_task(i, {informed: true});
+                        show_msg(item.content);
+                    }
+                }
+
+
+            }
+        }, 1000);
+    }
+
+    function  show_msg(msg) {
+        if (!msg) return;
+        $msg_content.html(msg);
+        $alert.get(0).play();
+        $msg.show();
+    }
+
+    function  hide_msg() {
+        $msg.hide();
+        $alert.get(0).pause();
+    }
 
     function render_task_list() {
         var $task_list = $('.task-list');

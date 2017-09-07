@@ -121,7 +121,7 @@ button{
     top:0px;
     right: 0px;
     width: 50%;
-    height: 270px;
+    height: 290px;
     color: #333;
 }
 
@@ -160,4 +160,17 @@ button{
     background: black;
     top:-11px;
     display: block;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    background: #ffe264;
+    padding: 10px;
+    color: #333;
+}
+
+
+.alert{
+    opacity: 0;
 }
