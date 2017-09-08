@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My blog</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="node_modules/jquery-3.2.1.min.js"></script>
+    <script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="bg">
+    <header><!--Header begin-->
+        <nav class="navbar navbar-inverse navbar-fixed-top"><!--Nav bar begin-->
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><strong>Hello</strong></a>
+                    <div class="nav navbar-left" id="nav-page">
+                        <ul class="">
+                            <li><a href="#" class="navbar-link">Main</a></li>
+                            <li class="active"><a href="#" class="navbar-link">Detail</a></li>
+                            <li><button id="pause-and-play" onclick="playPause()" class="btn btn-default play-and-stop">
+                            <span class="glyphicon glyphicon-pause">
+                                <video src="alert.mp3" id="video1" autoplay="autoplay" ></video>
+                            </span>
+                            </button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="responsive-navbar">
+                    <div class="profile navbar-right">
+                        <ul class="nav navbar-nav ">
+                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
+                            <li><a href="#" class="navbar-link">Log out</a></li>
+                            <li>
+                                <a href="#" id="trigger" >About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav><!--End of nav bar-->
+        <div id="banner">
+            <div class="inner">
+                <h1>WELCOME</h1>
+                <p class="sub-heading">Enjoy the life</p>
+                <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis cumque deleniti, eligendi excepturi fuga harum laboriosam maiores nihil, odio perferendis porro quasi, quia quis quo sequi soluta ullam ut.</p>
+                <button id="btn-more" data-toggle="modal" data-target="#about-modal">About me</button>
+                <div class="more">
+                    <a href="#">More</a><i class="fa fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header><!--Header end-->
+    <footer><!--footer begin-->
+        <ul class="share-group">
+            <li><a href="https://github.com/NanJiang327" target="view_window"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nan-jiang-12520a142/" target="view_window"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" target="view_window"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100007611424748" target="view_window"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" target="view_window"></i></a></li>
+            <li><a href="http://weibo.com/1875855147/profile?topnav=1&wvr=6" target="view_window"><i class="fa fa-weibo fa-2x" aria-hidden="true" target="view_window"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#wechat-modal"><i class="fa fa-weixin fa-2x" aria-hidden="true" target="view_window"></i></a></li>
+        </ul>
+        <div class="copy">
+            &copy Nan Jiang - 2017
+        </div>
+    </footer><!--footer end-->
+
+    <div id="mask">
+
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li><label><i class="fa fa-phone" aria-hidden="true"></i> Phone:021753826</label></li>
+            <li><label><i class="fa fa-envelope-o" aria-hidden="true"></i> Email:nj499521010@gmail.com</label></li>
+            <li><label><i class="fa fa-address-card-o" aria-hidden="true"></i> Address:6 Hazel Glen, Bayview, Auckland</label></li>
+        </ul>
+    </div>
+
+    <div class="modals">
+        <!--Login Modal-->
+        <div class="modal fade" id="login-modal" tabindex="-1" data-remote="">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-lg">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div><!--Login modal end-->
+
+        <!--Wechat Modal-->
+        <div class="modal fade" id="wechat-modal" tabindex="-1" data-remote="">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-lg">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>Wechat</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/wechat.jpg" style="width: 550px; height: 600px;" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div><!--Wechat modal end-->
+
+        <!--About model-->
+        <div class="modal fade" id="about-modal" tabindex="-1" data-remote="">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-lg">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>About me</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email">Phone:021753826</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:nj499521010@gmail.com</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Address:6 Hazel Glen, Bayview, Auckland</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div><!--about modal end-->
+    </div>
+
+    <div class="backToTop"><button>Back to top</button></div>
+
+</div>
+<script type="text/javascript">
+    var myVideo=document.getElementById("video1");
+    var playBtn = $('.play-and-stop');
+    function playPause()
+    {
+        if (myVideo.paused){
+            myVideo.play();
+            playBtn.children('span').removeClass('glyphicon-play').addClass('glyphicon-pause');
+        }
+        else{
+            myVideo.pause();
+            playBtn.children('span').removeClass('glyphicon-pause').addClass('glyphicon-play');
+        }
+
+    }
+
+</script>
+</body>
+</html>
