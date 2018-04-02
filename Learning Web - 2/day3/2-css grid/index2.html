@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Css Grid</title>
+	<style>
+		.wrapper{
+			display: grid;
+			/*grid-template-columns: 1fr 1fr 1fr;*/
+			/*grid-template-columns: repeat(3, 1fr 2fr);*/
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1em;
+			/*grid-auto-rows: 100px;*/
+			grid-auto-rows: minmax(100px, auto);
+
+		}
+
+		.nested{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1em;
+			grid-auto-rows: 100px;
+
+		}
+
+		.nested > div{
+			background: indianred;
+			padding: 1em;
+		}
+
+		.wrapper > div{
+			background: greenyellow;
+			padding: 1em;
+		}
+
+		.wrapper > div:nth-child(odd){
+			background: lightblue;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+	<div class="nested">
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+	</div>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab maiores, non perspiciatis repudiandae soluta tempora? Accusamus adipisci commodi deleniti officiis perferendis quisquam tenetur vitae voluptatum! Cum distinctio eum incidunt non odit quae! Ad cumque excepturi nostrum odio quisquam? Laboriosam, vero.
+	</div>
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+	<div>
+		Lorem ipsum dolor sit.
+	</div>
+</div>
+
+</body>
+</html>
