@@ -1,0 +1,51 @@
+@import "mixin";
+@import "reset";
+@import "variables";
+
+#main-nav{
+  background: $deepBlue;
+  ul{
+    width: 100%;
+  }
+
+  li{
+    float: left;
+    width: 14%;
+  }
+
+  a{
+    text-decoration: none;
+    color:$offWhite;
+    padding: 16px;
+    display: block;
+    text-align: center;
+  }
+
+  ul:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+}
+//end main-nav
+
+section h1{
+  font-size: $sectionHeading;
+  color: $deepBlue;
+}
+
+.lead-banner{
+  @include banner;
+  text-align: right;
+}
+
+.lessons-banner{
+  @include banner;
+  li{
+    text-transform: uppercase;
+    font-size: 20px;
+    max-width: 500px;
+    margin: 60px;
+  }
+}

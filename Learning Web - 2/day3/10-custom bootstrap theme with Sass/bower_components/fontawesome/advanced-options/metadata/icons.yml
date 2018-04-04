@@ -9677,7 +9677,7 @@ vial:
   label: Vial
   search:
     terms:
-      - test tube
+      - sass tube
   styles:
     - solid
   unicode: f492
@@ -9688,7 +9688,7 @@ vials:
   search:
     terms:
       - lab results
-      - test tubes
+      - sass tubes
   styles:
     - solid
   unicode: f493
