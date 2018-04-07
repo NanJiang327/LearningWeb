@@ -13,77 +13,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/day4/SASS/scss/style.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="variables.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/day4/SASS/scss/variables.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mixin.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/day4/SASS/scss/mixin.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="reset.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/day4/SASS/scss/reset.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="23" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/day4/SASS/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="466">
-                  <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/day4/SASS/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="507">
-                  <caret line="38" column="88" lean-forward="true" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day4/bootstrap/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -124,6 +71,7 @@
         <option value="$PROJECT_DIR$/day4/SASS/scss/reset.scss" />
         <option value="$PROJECT_DIR$/day4/SASS/scss/style.scss" />
         <option value="$PROJECT_DIR$/day4/SASS/index.html" />
+        <option value="$PROJECT_DIR$/day4/bootstrap/index.html" />
       </list>
     </option>
   </component>
@@ -143,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,75 +101,26 @@
             <path>
               <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="6-bootstrap2" type="462c0819:PsiDirectoryNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="10-custom bootstrap theme with Sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="10-custom bootstrap theme with Sass" type="462c0819:PsiDirectoryNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="11-Fullscreen video backgroud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="12-CSS Animation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="SASS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="SASS" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="SASS" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning Web - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning Web - 2" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="SASS" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,16 +136,18 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/day4/SASS/img" />
-      <recent name="$PROJECT_DIR$/day3/11-Fullscreen video backgrou d/video" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/day4/sass" />
       <recent name="$PROJECT_DIR$/day4/tets" />
       <recent name="$PROJECT_DIR$/day4/sass/css" />
       <recent name="$PROJECT_DIR$/day3/14-Split landing page/css" />
       <recent name="$PROJECT_DIR$/day3/13-grid css responsive website layout/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day4/bootstrap/img" />
+      <recent name="$PROJECT_DIR$/day4/bootstrap" />
+      <recent name="$PROJECT_DIR$/day4/SASS/img" />
+      <recent name="$PROJECT_DIR$/day3/11-Fullscreen video backgrou d/video" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,11 +176,12 @@
       <workItem from="1522656380810" duration="16556000" />
       <workItem from="1522736799046" duration="6236000" />
       <workItem from="1522900931372" duration="5217000" />
+      <workItem from="1523073512141" duration="6059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34291000" />
+    <option name="totallyTimeSpent" value="40350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -312,6 +213,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day4/SASS/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/SASS/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="88" lean-forward="true" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day4/SASS/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -572,7 +487,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day4/SASS/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="1309">
           <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
         </state>
       </provider>
@@ -594,15 +509,9 @@
     <entry file="file://$PROJECT_DIR$/day4/SASS/scss/mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/SASS/img/code.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/SASS/img/3.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/day4/SASS/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -611,13 +520,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day4/SASS/img/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/day4/SASS/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="83">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/bootstrap/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
