@@ -1,0 +1,127 @@
+/*
+ Lists
+ */
+
+.list{
+  margin-bottom: 30px;
+}
+
+.list-feature{
+  @extend .list;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+
+  li{
+    line-height: 4.0em;
+    @include add-border(1px, #ccc, bottom);
+  }
+
+  li:last-child{
+    border: 0;
+  }
+
+  span{
+    vertical-align: top;
+    padding-top: 9px;
+    font-size: 120%;
+  }
+
+  i{
+
+    margin-right: 5px;
+  }
+}
+
+.list-comments{
+  margin: 0;
+  padding: 0;
+
+  li{
+    padding: 10px 0 5px 0;
+    @include add-border(1px, #ccc, bottom);
+
+    &:last-child{
+      border: 0;
+    }
+  }
+
+  img{
+    width: 100px;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.fa-primary{
+  color: $primary-color;
+}
+
+.fa-border{
+  @include add-border(1px, $primary-color, all);
+  @include border-radius(5px);
+  padding: 13px 15px;
+  margin-bottom: 10px;
+}
+
+/*
+ Headings
+ */
+.heading-primary{
+  color: $primary-color;
+}
+
+.heading-primary-a{
+  @extend .heading-primary;
+  @include add-border(2px, $primary-color, bottom);
+}
+
+.heading-secondary{
+  color: $secondary-color;
+}
+
+.heading-secondary-a{
+  @extend .heading-secondary;
+  @include add-border(2px, $secondary-color, bottom);
+}
+
+
+.heading-light{
+  color: $light-color;
+}
+
+
+.heading-light-a{
+  @extend .heading-light;
+  @include add-border(2px, $light-color, bottom);
+}
+
+
+.heading-dark{
+  color: $dark-color;
+}
+
+
+.heading-dark-a{
+  @extend .heading-dark;
+  @include add-border(2px, $dark-color, bottom);
+}
+
+/*
+ Emphasis text
+ */
+
+.em-primary{
+  color: $primary-color;
+}
+
+.em-secondary{
+  color: $secondary-color;
+}
+
+.em-light{
+  color: $light-color;
+}
+
+.em-dark{
+  color: $dark-color;
+}

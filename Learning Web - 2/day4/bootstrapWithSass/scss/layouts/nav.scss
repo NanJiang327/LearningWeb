@@ -1,0 +1,22 @@
+/*
+Navbar
+*/
+
+.navbar{
+  margin: auto;
+  @include add-border(1px, #e7e7e6, 'right-left');
+  min-height: 60px;
+  margin-bottom: 30px;
+
+  a{
+    color:$primary-color !important;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    padding-bottom: 24px !important;
+    padding-top: 20px !important;
+    &:hover{
+      color: #fff !important;
+      background: $primary-color !important;
+    }
+  }
+}

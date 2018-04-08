@@ -1,0 +1,21 @@
+/*
+ Carousel
+ */
+
+.carousel{
+  margin-bottom: 20px;
+}
+
+.carousel img{
+  padding: 3px;
+  @include add-border(0.5px, #ccc, all);
+}
+
+/*
+ Tab
+ */
+.tab-pane{
+  padding: 20px 10px;
+  @include border-radius(5px);
+  margin-bottom: 20px;
+}

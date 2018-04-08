@@ -1,0 +1,28 @@
+/*
+ Blog
+ */
+
+.blog-post{
+  @include add-border(1px, #ccc, top);
+  @include add-border(1px, #ccc, right-left);
+  padding: 15px;
+  min-height: 250px;
+
+}
+
+.blog-featured{
+  float: left;
+  margin-right: 15px;
+}
+
+.post-meta{
+  background: #f3f3f3;
+  padding: 10px 10px 10px 10px;
+  @include add-border(1px,#ccc, all);
+  margin-bottom: 20px;
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
